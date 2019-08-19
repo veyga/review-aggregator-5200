@@ -1,0 +1,99 @@
+[
+  {
+    "business_id": "1",
+    "name": "business1",
+    "address": "123 Main St",
+    "city": "Las Vegas",
+    "state": "NV",
+    "postal_code": 12345,
+    "latitude": 444.00,
+    "longitude": 555.00,
+    "stars":2.0,
+    "review_count": 1,
+    "is_open": true,
+    "categories": "American, Casual",
+    "reviews": [
+      {
+        "review_id": "review1",
+        "user": {
+          "user_id": "user1",
+          "name": "John Smith",
+          "review_count": 3,
+          "account": "2017-02-02",
+          "average_stars": 2
+        },
+        "stars": 3,
+        "text": "It was great",
+        "date": "2019-01-01"
+      },
+      {
+        "review_id": "review2",
+        "user": {
+          "user_id": "user1",
+          "name": "John Smith",
+          "review_count": 3,
+          "account": "2017-02-02",
+          "average_stars": 2
+        },
+        "stars": 1,
+        "text": "I went back and it was awful",
+        "date": "2019-01-04"
+      }
+    ]
+  },
+  {
+    "business_id": "2",
+    "name": "business2",
+    "address": "123 Main St",
+    "city": "Las Vegas",
+    "state": "NV",
+    "postal_code": 12333,
+    "latitude": 444.00,
+    "longitude": 555.00,
+    "stars":4.0,
+    "review_count": 1,
+    "is_open": true,
+    "categories": "American, Casual",
+    "reviews": [
+      {
+        "review_id": "review3",
+        "user": {
+          "user_id": "user1",
+          "name": "John Smith",
+          "review_count": 3,
+          "account": "2017-02-02",
+          "average_stars": 2
+        },
+        "stars": 3,
+        "text": "It was great",
+        "date": "2019-05-01"
+      },
+      {
+        "review_id": "review4",
+        "user": {
+          "user_id": "user2",
+          "name": "Sally Johnson",
+          "review_count": 4,
+          "account": "2017-02-10",
+          "average_stars": 2
+        },
+        "stars": 5,
+        "text": "Excellent",
+        "date": "2019-01-04"
+      },
+      {
+        "review_id": "review5",
+        "user": {
+          "user_id": "user3",
+          "name": "Tim Murphy",
+          "review_count": 1,
+          "account": "2017-02-15",
+          "average_stars": 3
+        },
+        "stars": 3,
+        "text": "It was okay",
+        "date": "2019-05-01"
+      }
+    ]
+  }
+]

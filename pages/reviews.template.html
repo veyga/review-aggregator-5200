@@ -1,0 +1,33 @@
+<p>
+    <a href="#/">Back to Search </a>
+</p>
+
+<h1>Reviews and Business Details</h1>
+</hr>
+<div class="container">
+    <div class="jumbotron">
+        <h2>{{ business.name }} </h2>
+        <h3> {{ formattedAddress(business) }}</h3>
+        <h4> Average Rating: {{ business.stars }}</h4>
+        <h4> Categories: {{ business.categories }}</h4>
+    </div>
+    <a href="#/post" class="btn btn-primary"> Post New Review</a>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Yelp Reviews</h2>
+            <div class="panel-body" ng-repeat="rev in business.review">
+                <review></review>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Trip Advisor Reviews</h3>
+            <div class="panel-body" ng-repeat="trip in business.tripreviews">
+                * {{trip}}
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

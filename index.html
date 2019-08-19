@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="reviewsApp">
+<head>
+    <title>AngularJS Weather Forecast SPA</title>
+    <meta charset="UTF-8">
+
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <style>
+        html, body, input, select, textarea
+        {
+            font-size: 1.05em !important;
+        }
+    </style>
+
+    <script src="//code.angularjs.org/1.3.0-rc.2/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.3.0-rc.2/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.3.0-rc.2/angular-resource.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/angular-toastr@2/dist/angular-toastr.tpls.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/angular-toastr@2/dist/angular-toastr.css">
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    <script src="directives.js"></script>
+    <script src="services.js"></script>
+    <script src="routes.js"></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">CS5200-Reviews</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div ng-view></div>
+
+</div>
+
+</body>
+</html>

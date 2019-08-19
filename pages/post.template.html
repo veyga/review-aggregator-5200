@@ -1,0 +1,16 @@
+<h2> New Review for {{ business.name }}</h2>
+<div class="form-group">
+    <form>
+        Number of stars:
+        <input type="radio" ng-model="stars" value="1">1
+        <input type="radio" ng-model="stars" value="2">2
+        <input type="radio" ng-model="stars" value="3">3
+        <input type="radio" ng-model="stars" value="4">4
+        <input type="radio" ng-model="stars" value="5">5
+    </form>
+    <br>
+    <label for="review">Review:</label>
+    <input type='text' class="form-control" id="review" ng-model="reviewtext">
+    <button type="button" class="btn btn-default" ng-click="post()">Post</button>
+</div>
+

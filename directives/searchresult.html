@@ -1,0 +1,6 @@
+<a href="#/reviews" class="list-group-item" ng-repeat="business in businesses" ng-click="showReviews(business)">
+    <h4 class="list-group-item-heading"> {{business.name}} </h4>
+    <p class="list-group-item-text">
+    {{ formattedAddress(business) }}
+    </p>
+</a>
